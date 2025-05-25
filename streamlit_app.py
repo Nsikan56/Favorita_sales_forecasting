@@ -72,4 +72,13 @@ if submitted:
 
     # Display SHAP waterfall plot for this prediction
     st_shap(shap.plots.waterfall(shap_values[0]), height=400)
+    st.markdown("""
+        🧠 **Interpretation:**  
+        This SHAP plot shows how each feature influenced the model’s prediction.  
+        In this case, recent sales patterns (`lag_1`, `lag_7`, `rolling_mean_7`) decreased the forecast,  
+        while being on promotion and store effects added a smaller upward influence.
+
+        Together, these explain why the predicted daily sales landed at this value.
+        """)
+
 
