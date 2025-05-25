@@ -67,6 +67,10 @@ Shows which features most influenced the model.
 ![SHAP Summary](Images/shap_summary.png)
 
 ### 🧠 SHAP Local Waterfall
+We used SHAP to explain the exact prediction made for one sample input.  
+Below, the SHAP waterfall plot shows how recent sales lags and rolling averages pushed the forecast down,  
+while promotional status slightly increased it.
+
 Detailed explanation for a single prediction.
 
 ![SHAP Waterfall](Images/shap_waterfall.png)
