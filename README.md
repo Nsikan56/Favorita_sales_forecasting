@@ -10,14 +10,23 @@ I don’t just tune models — I explain *why* they behave the way they do.
 This project predicts daily item-level sales for a major grocery chain using structured time series data.  
 It incorporates calendar events, oil prices, holidays, store metadata, and engineered time features.
 
-> ⚠️ Note: Raw data files are not included in this repository due to size.
-> You can download the dataset from [Kaggle](https://www.kaggle.com/competitions/store-sales-time-series-forecasting/data).
+> ⚠️ **Note:** Raw datasets (`train.csv`, `train_cleaned.csv`, etc.) have been excluded from this repository due to size constraints.  
+> You can download the full dataset directly from the [Kaggle competition page](https://www.kaggle.com/competitions/store-sales-time-series-forecasting/data).
+
 
 
 - 📆 Data: Favorita (Ecuador), 2013–2017
 - 🤖 Model: XGBoost Regressor (tuned with GridSearchCV)
 - 🧠 Explainability: SHAP (summary + local waterfall)
 - 📈 Metrics: RMSE on holdout set
+
+---
+
+## 📦 Dataset Access
+
+The data used in this project was obtained from the [Corporación Favorita Grocery Sales Forecasting competition on Kaggle](https://www.kaggle.com/competitions/store-sales-time-series-forecasting/data).
+
+This repository excludes raw `.csv` files to meet GitHub's file size policy.
 
 ---
 
@@ -41,10 +50,10 @@ It incorporates calendar events, oil prices, holidays, store metadata, and engin
 | RMSE (val)   | 478.85   |
 
 ### 📊 Actual vs Predicted Plot
-![Actual vs Predicted](actual_vs_predicted.png)
+![Actual vs Predicted](Images/actual_vs_predicted.png)
 
 ### 📊 Predicted vs Actual Scatter
-![Predicted vs Actual](predicted_vs_actual.png)
+![Predicted vs Actual](Images/predicted_vs_actual.png)
 
 ---
 
@@ -53,17 +62,17 @@ It incorporates calendar events, oil prices, holidays, store metadata, and engin
 ### 📌 SHAP Summary Plot
 Shows which features most influenced the model.
 
-![SHAP Summary](shap_summary.png)
+![SHAP Summary](Images/shap_summary.png)
 
 ### 🧠 SHAP Local Waterfall
 Detailed explanation for a single prediction.
 
-![SHAP Waterfall](shap_waterfall.png)
+![SHAP Waterfall](Images/shap_waterfall.png)
 
 ### 🔢 XGBoost Top 20 Features
 Built-in feature importances based on split frequency.
 
-![XGBoost Feature Importance](xgb_feature_importance.png)
+![XGBoost Feature Importance](Images/xgb_feature_importance.png)
 
 ---
 
