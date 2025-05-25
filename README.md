@@ -1,5 +1,7 @@
 # 🛒 Favorita Grocery Sales Forecasting
 
+[![Streamlit App](https://img.shields.io/badge/Live%20Demo-Click%20Here-success?style=flat&logo=streamlit)](https://nsikan56-favorita-sales-forecasting-streamlit-app-a1ysmy.streamlit.app/)
+
 End-to-end time series forecasting project using XGBoost, SHAP, and real-world grocery data.  
 I don’t just tune models — I explain *why* they behave the way they do.
 
